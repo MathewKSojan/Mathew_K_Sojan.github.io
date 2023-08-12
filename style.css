@@ -1,0 +1,329 @@
+*{
+    scroll-behavior: smooth;
+}
+
+body{
+    /* background: linear-gradient(#000000,#0d1aa8,#6a0000); */
+    background-image: url(Untitled\ design.png);
+    /* background-image: url(Untitled design.png); */
+    background-size: contain;
+    background-color: black;
+    background-repeat: repeat-x;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 5px;
+}
+
+
+.headnnav a{
+    color: #2ecc71;
+    display: flex;
+    padding-top: 20px;
+    padding-right: 20px;
+    z-index: -1;
+}
+
+.headnnav a:hover{
+    color: #eee;
+}
+
+.navtxt a:hover{
+    color: #eee;
+}
+
+
+
+.nav{
+    display: flex;
+    float: right;
+    color: cadetblue;
+    padding-top: 0px;
+    font-size: 23px;
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-right: 6px;
+    z-index: -1;
+    text-align: center;
+    /* padding-right: 20px; */
+}
+
+
+.namenpic{
+    padding-top: 20px;
+    padding-left: 8%;
+    padding-right: 2cm;
+    padding-bottom: 0cm;
+    position: relative;
+    
+}
+
+#menu-icon{
+     font-size: 35px;
+     color: #2ecc71;
+     cursor: pointer;
+     z-index: 10001;
+     display: none;
+}
+
+/* .namenpic a:hover{
+    opacity: 0;
+} */
+
+.about {
+    opacity: 0; /* start with the text hidden */
+    animation: appear 1s forwards; /* call the "appear" animation for 1 second */
+  }
+
+  .experience {
+    opacity: 0; /* start with the text hidden */
+    animation: appear 1s forwards; /* call the "appear" animation for 1 second */
+  }
+  .education{
+        opacity: 0; /* start with the text hidden */
+        animation: appear 1s forwards; /* call the "appear" animation for 1 second */
+      }
+
+      .projects {
+        opacity: 0; /* start with the text hidden */
+        animation: appear 1s forwards; /* call the "appear" animation for 1 second */
+      }
+
+      .contact {
+        opacity: 0; /* start with the text hidden */
+        animation: appear 1s forwards; /* call the "appear" animation for 1 second */
+      }
+
+     
+
+.about{
+    padding-top: 2.5cm;
+    text-align: center;
+}
+
+/* .experience{
+
+} */
+
+span{
+    color: #2ecc71;
+    }
+
+h3 {
+    color: #eee;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+
+.social a{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    color: #eee;
+    cursor: pointer;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    background-color: rgba(255,255,255,0.1);
+}
+
+.social a:hover{
+    transform: scale(1.1);
+    background-color: #2ecc71;
+    transition: .4s;
+}
+
+.abt{
+    height: 50px;
+    width: 150px;
+    color: #eee;
+    background: rgba(255,255,255,0.1);
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 3px;
+    line-height: 24px;
+    border: 2px solid #2ecc71;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.aboutp{
+    height: 0px;
+    color: #eee;
+    background-color:rgba(255,255,255,0.1) ;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0px 0px;
+    cursor: pointer;
+}
+
+.abt:hover{
+    background: transparent;
+    background-color: #2ecc71;
+    border:2px solid #9decbe;
+    color: #eee;
+    transition: .4s;
+}
+
+.edu-hd{
+    padding-left: 2cm;
+    padding-bottom: 0%;
+
+    text-align: center; 
+    height: 10;padding-top: 2cm;
+    padding-left:0cm; 
+    text-align: center;    
+}
+
+.edu-sh{
+    padding-left: 8.5cm;
+    padding-top: 0%;
+    font-size: 20px;
+}
+
+.edu-ssh{
+    padding-left: 8.5cm;
+    padding-top: 0%;
+}
+
+.pro_c{
+    padding-left: 11cm;
+    padding-right: 9cm;
+}
+
+.ehd{
+    text-align: center; 
+    height: 10;
+    padding-top: 2cm;
+}
+
+@keyframes appear {
+    0% {
+      opacity: 0; /* start with the text hidden */
+      transform: translateY(20px); /* move the text 20px down */
+    }
+    100% {
+      opacity: 1; /* end with the text fully visible */
+      transform: translateY(0); /* move the text back to its original position */
+    }
+  }
+
+
+
+.pro_div{
+    padding-top: 1.5cm;
+}
+
+.ex_hd{
+    padding-left: 15px;
+}
+
+/* 
+@media screen and (max-width:930px) {
+    nav .hamp{
+        display: initial;
+    }
+    .click{
+        top: 46px;
+    }
+    .click span:first-child{
+        transform: rotate(-40deg);
+    }
+    .click span:nth-child(2){
+        opacity: 0;
+        margin: 0;
+    }
+    .click span:last-child{
+        transform: rotate(40deg);
+        top: 0;
+    }
+    nav .nav-list{
+        position: absolute;
+        top: 90px;
+        right: 0;
+        bottom: 0;
+        width: 60%;
+        height: 50%;
+        background: black;
+        z-index: 2;
+        padding: 6% 9%;
+        transition: .3s right;
+        border-radius: 10px;
+    }
+} */
+
+/* @media (max-width: 390px) and (max-height: 844px) {
+    .container {
+      background: none;
+    }
+  
+    .responsive-paragraph {
+      background: none;
+    }
+  } */
+  
+
+  @media (max-width: 767px) { /* Adjust this value as needed */
+    body {
+      padding-left: 0;
+      background-color: black;
+      background-image: none;
+    }
+    
+    /* Specific styling for a particular element */
+    .namenpic {
+      padding-left: 0px; /* Adjust the padding value as needed */
+
+      width: auto;
+    }
+
+    .headnnav {
+        padding-left: 0px; /* Adjust the padding value as needed */
+      }
+
+    .experience{
+        padding-left: 0px;
+    }
+
+    h4.ex_hd{
+        padding-left: 0px;
+    }
+
+    .social{
+        padding-top: 5%;
+    }
+
+    .img1{
+        display: none;
+    }
+
+    .edu-sh{
+        padding-left: 0%;
+    }
+
+    .pic_ctrl{
+        display: none;
+    }
+
+    .edu-ssh{
+        padding-left: 0%;
+    }
+
+    /* .cnt_p{
+        padding-left: 0%;
+    } */
+
+    .pro_div{
+        padding-left: 0%;
+    }
+
+    .pro_c{
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+  }
+  
+  
